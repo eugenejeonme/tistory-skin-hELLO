@@ -12,3 +12,23 @@ globals:
   T: readonly
 
 ignorePatterns: dist/
+
+rules:
+  quotes: [off, double] # airbnb default: ['error', 'single', { avoidEscape: true }]
+  no-trailing-spaces: error
+  semi: off
+  comma-dangle:
+    - off
+    - always-multiline
+  comma-spacing:
+    - off
+    - after: true
+      before: false
+  comma-style:
+    - off
+    - last
+  space-before-function-paren:
+    - off
+    - named: never
+      anonymous: never
+      asyncArrow: always
